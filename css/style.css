@@ -441,6 +441,7 @@ span{
         justify-content: center;
         align-items: center;
         width: 100vw;
+        height: 200px;
         background-color: aqua;
         text-align: center;
     }
