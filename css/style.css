@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color: #fff;
+}
+.info-content{
+    font-size: large;
+}
+.info-content p {
+    margin-right: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+.brand{
+    margin-top: -7px;
+}
+.brand span{
+    color: aqua;
+}
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+.menu li{
+    list-style: none;
+}
+.CV{
+    display: none;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+.menu .active {
+    color: aqua;
+}
+.menu a:hover{
+    background-color: aqua;
+    color:#191c32 ;
+    transition: ease-in .2s;
+    border-radius: 10px;
+}
+.toggle_menu,
+.info-content__sotial-network{
+    display: none;
+}
+
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+h1{
+    font-size: clamp(4vw,1.5em, 3em);
+}
+span{
+    color: aqua;
+}
+.download-cv,.btn-project-details{
+    padding: 10px 20px;
+    background-color: aqua;
+    border:none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+    -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+    box-shadow: 1px 3px 11px -5px rgba(102, 231,200, .69);
+}
+.download-cv:hover, .btn-project-details:hover{
+    background-color:#191c32 ;
+    color: #fff;
+    box-shadow: none;
+    transition: ease-in .1s;
+}
+.main-img{
+    width: 410px;
+    height: 500px;
+    border-radius: 10px;
+    border: 7px solid aqua;
+    min-height: 300px;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+}
+.about img{
+    width: 100%;
+    grid-column: 1/5;
+}
+.about-info{
+    grid-column: 5/10;
+    padding: 4em;
+}
+.about-info h2{
+    font-size: 2em;
+    color: #191c32;
+}
+.divider{
+    height: 4px;
+    width: 60px;
+    background-color: aqua;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.about p{
+    margin-bottom: 5px;
+}
+.aboutp{
+    font-size: large;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.portafolio,
+.contact-section{
+    width: 100vw;
+    background-color: #191c32;
+    color: #fff;
+}
+
+.portafolio-headings, .services-headings{
+    width: 100vw;
+    padding: 5em;
+}
+
+.portafolio-headings h2{
+    font-size: 2.5em;
+}
+
+.services-headings h2{
+    font-size: 2.5em;
+}
+.services-section .services-container{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portafolio .container{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    height: 520px;
+    color: #fff;
+    background-color: #2b3058;
+    margin: 1em;
+    border-radius: 10px;
+}
+.card p{
+    text-align: justify;
+}
+.card__img{
+    width: 100%;
+    height: 190px;
+    background-image: url(../img/Hr.PNG);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card__img_d{
+    width: 100%;
+    height: 140px;
+    background-image: url(https://shaddailaboratorios.com/wp-content/uploads/2021/04/logo-shaddai.png);
+    background-size: cover;
+}
+.card__img_t{
+    width: 100%;
+    height: 208px;
+    background-image: url(../img/BA.png);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card__img_C{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    background-position:center;
+}
+.card__img_S{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/SEGEY.png);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card__img_O{
+    width: 100%;
+    height: 200px;
+    background-image: url(https://www.rswebsols.com/wp-content/uploads/2021/04/amazon-web-services-aws.jpg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card__title{
+    padding: 20px;
+}
+.box__title{
+    padding: 20px;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.card__projectlinks{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card__projectlinks a{
+    color: #fff;
+    text-decoration: none;
+}
+.card__projectlinks img{
+    width: 50px;
+    height: 50px;
+}
+.card .project-details{
+    margin: 0 auto;
+    margin: 1em;
+    width: 70%;
+    
+}
+
+.card .project-details a{
+    text-decoration: none;
+    color: #191c32;
+}
+
+.box{
+    width: 400px;
+    height: 250px;
+    color: #fff;
+    background-color: #2b3058;
+    margin: 1em;
+    border-radius: 10px;
+}
+.project-details-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+.contact-headings {
+    font-size: 2em;
+    padding: 2em;
+}
+.container-contact{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    align-items: center;
+    padding: 2em;
+    margin: 0 auto;
+}
+.container-contact img{
+    width: 700px;
+    height: 650px;
+    bottom: 0px;
+    margin-right: 6em;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+.form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.form textarea{
+    height: 150px;
+    padding: 1.5em;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    resize: none;
+}
+.btn-submit{
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231,200, .69);
+    transition: ease-in .1s;
+}
+.btn-submit:hover{
+    background-color: #fff;
+    box-shadow: none;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 140px;
+    background-color: aqua;
+    text-align: center;
+}
+.footer-content h2{
+    font-size: 2.5em;
+}
+.footer-content h5{
+    font-size: 1.5em;
+}
+.sotial-network{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 1em;
+}
+.sotial-network img{
+    width: 40px;
+    height: 40px;
+}
+/*Todo lo que esté dentro de las llaver acurrirá*/
+@media screen and (max-width:800px){
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: #2b3058;
+        z-index: 1;
+        transform: translateX(-110%);
+        transition: all .5s ease-in-out;
+    }
+    .show_menu{
+        transform: translateX(0%);
+        transition: all .5s ease-in-out;
+    }
+    .menu li{
+        margin:2em;
+    }
+    .toggle_menu,
+    .CV{
+        display: block;
+    }
+    .fa-bars,
+    .fa-close{
+        margin-top: -.8em;
+    }
+    .toggle_menu .fa-close{
+        display: none;
+    }
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main img{
+        margin-top: 50px;
+    }
+    .info-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-content__p,
+    .download-cv,
+    .contact-section img{
+        display: none;
+    }
+    .main img{
+        width: min(80%, 400px);
+        height: auto;
+    }
+    .about img{
+        width: min(80%, 410px);
+        height: auto;
+    }
+    .info-content__sotial-network{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .info-content__Subtitle{
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+    .info-content__sotial-network img{
+        width: 40px;
+        height: 40px;
+    }
+    .form{
+        width: 80vw;
+        padding: 10px 10px;
+    }
+}

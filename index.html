@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+    <title>Portafolio Pedro Hernández Dzul</title>
+    <link rel="stylesheet" href="D:\Pedro Hernandez\Documents\P\Portafolio\css/style.css">
+</head>
+<body>
+    <div class="wrapper" id="home">
+        <header>
+            <nav class ="navbar"> <!-- Barra del menú -->
+                <div class="brand">
+                    <h2>PH<span>DZ</span></h2>
+                </div>
+                <ul class="menu" id="menu"> <!-- Menú -->
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#About">Sobre Mi</a></li>
+                    <li><a href="#Portafolio">Portafolio</a></li>
+                    <li><a href="#Services">Servicios</a></li>
+                    <li><a href="#Contact">Contacto</a></li>
+                    <li><a class="CV"  download href="../Portafolio/documents/Pedro_Hernandez_CV.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a></li>
+                </ul>
+                <!--Versión Móvil-->
+                <div class="toggle_menu">
+                    <img class="fa-bars" id="toggle_open" src="./img/menu.png" width="30em" height="30em" alt="Menu Opciones Pedro">
+                    <img class="fa-close" id="toggle_close" src="./img/close.png" width="25em" height="25em" alt="Cerrar Menu Opciones Pedro">
+                </div>
+            </nav>
+        </header>
+        <main class="main"> <!-- Creación del contenido -->
+            <div class="info-content">
+                <span class="info-content__Subtitle"><b>Desarrollador de Software</b></span>
+                <h1>Yo soy <span>Pedro David</span> Hernández Dzul</h1>
+                <!--Esto solo es para la versión movil-->
+                <div class="info-content__sotial-network">
+                    <a href="https://www.linkedin.com/in/pedro-david-hernandez-dzul/" target="_blank" rel="noopener noreferrer">
+                        <img src="D:\Pedro Hernandez\Documents\P\Portafolio/img/linkedin.PNG" alt="Pedro Hernández Dzul linkedin">
+                    </a> 
+                    <a href="https://instagram.com/code.to.learn?r=nametag" target="_blank" rel="noopener noreferrer">
+                        <img src="D:\Pedro Hernandez\Documents\P\Portafolio/img/ig.PNG" alt="Pedro Hernández Dzul Instagram"> 
+                    </a>
+                    <a href="mailto:hernandezdzulpedro2@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <img src="D:\Pedro Hernandez\Documents\P\Portafolio/img/gmail.PNG" alt="Pedro Hernández Dzul Gmail"> 
+                    </a>
+                    <a href="https://twitter.com/PedroHe97165171" target="_blank" rel="noopener noreferrer">
+                        <img src="D:\Pedro Hernandez\Documents\P\Portafolio/img/twitter.PNG" alt="Pedro Hernández Dzul Twitter"> 
+                    </a>
+                    <a href="https://github.com/PedroHernandez654" target="_blank" rel="noopener noreferrer">
+                        <img src="D:\Pedro Hernandez\Documents\P\Portafolio/img/git.PNG" alt="Pedro Hernández Dzul Twitter"> 
+                    </a>
+                </div>
+                <!-- About me -->
+                <p class="info-content__p">Actualmente estoy cursando el 5° semestre de la Ingenieria en Desarrollo de Tecnologías y Software 
+                    en la Universidad Modelo. Soy una persona con facilidad de 
+                    aprendizaje, soy autodidacta, puedo trabajar bajo 
+                    presión, tengo la facilidad de poder 
+                    resolver problemas con rapidez y 
+                    estoy dispuesto a aprender más para 
+                    crecer profesionalmente y como persona.
+                </p>
+               <!-- Descarga de CV -->
+                <a download href="../Portafolio/documents/Pedro_Hernandez_CV.pdf" target="_blank" rel="noopener noreferrer">
+                    <button class="download-cv" download="/Pedro_Hernandez_CV.PDF" style="font-size: .90em;">Descargar CV</button>
+                </a>
+            </div>
+            <img class="main-img" src="D:\Pedro Hernandez\Documents\P\Portafolio\img/perfil.JPEG" alt="Pedro Hernández Dzul Foto"> 
+        </main>
+    </div>
+    <!-- About Me -->
+    <div class="about" id="About">
+        <img src="D:\Pedro Hernandez\Documents\P\Portafolio\img/about.PNG" alt="Acerca de mi">
+        <div class="about-info">
+            <h2>Acerca de Mi</h2>
+            <div class="divider"></div>
+            <p class="aboutp">Tengo experiencia básica en programación de páginas web, sin embargo actualmente
+                me especializo más en el desarrollo de aplicaciones de escritorio así como en la creación y mantenimiento
+                de bases de datos SQL, el lenguaje que más domino es C# junto con Pyhton.</p>
+            <p class="aboutp">Aspiro a especializarme como 'Arquitecto de Software', mi proyecto más importante hasta la fecha es 
+                un 'sistema para la automatización de procesos'.</p>
+            <div class="hide" id="hideText">
+                <h3>Aptitudes y destrezas</Del></h3>
+                <ul>
+                    <li class="aboutp">C++, C#, Pyhton, JavaScript, HTML, CSS, SQL, Dockers, Linux.</li>
+                    <li class="aboutp">Puedo trabajar en equipo amenamente, autodidacta, estoy abierto al diálogo, manejo del estrés. </li>
+                    <li class="aboutp">Desarrollo web y Desarrollo de aplicaciones, Sistema de bases de datos, Servicios en AWS, MySQL
+                        Microsoft SQL Server, GitHub.
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-project-details" id="hideTextBtn" style="font-size: .90em;">Read More</button>
+        </div>
+    </div>
+
+     <!-- Portafolio -->
+     
+    <div class="portafolio" id="Portafolio">
+        <div class="portafolio-headings">
+            <h2>Mi portafolio</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="card__img"><!-- Modelo BEM -->
+                    <div class="card__img"></div>
+                    <div class="card__title">
+                        <h2>Sistema para la Automatización de Procesos</h2>
+                        <p>Aplicación de escritorio para la empresa "HidroRed", en donde desarrollé
+                            una aplicación conectada a una base de datos desde cero para la automatización de procesos.
+                        </p>
+                    </div>
+                    <div class="project-details-content">
+                        <a download href="./documents/Pedro_Hernandez_HR.pdf" target="_blank" rel="noopener noreferrer">
+                            <button class="btn-project-details" download="/Pedro_Hernandez_HR.PDF">Descripción del Proyecto</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img_d"><!-- Modelo BEM -->
+                    <div class="card__img_d"></div>
+                    <div class="card__title">
+                        <h2>Mantenimiento a Shaddai Laboratorios</h2>
+                        <p>Brindé mis sericios para darle mantenimiento al sitio web de la empresa Shaddai Laboratorios
+                            la cual presentaba diversos errores al momento de querer ingresar al sitio web
+                        </p>
+                    </div>
+                    <div class="card__projectlinks">
+                        <a href="https://shaddailaboratorios.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="D:\Pedro Hernandez\Documents\P\Portafolio\img/world.PNG">
+                        </a>
+                    </div>
+                    <div class="project-details-content">
+                        <a href="https://shaddailaboratorios.com/" target="_blank" rel="noopener noreferrer">
+                            <button class="btn-project-details">Descripción del Proyecto</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img_t"><!-- Modelo BEM -->
+                    <div class="card__img_t"></div>
+                    <div class="card__title">
+                        <h2>Prácticas Profesionales</h2>
+                        <p>Fui parte del equipo de Business Advocacy para
+                            realizar mis prácticas profesionales en el período de: Febrero 2022 - Junio 2022
+                        </p>
+                    </div>
+                    <div class="card__projectlinks">
+                        <a download href="../Portafolio/documents/Pedro_Hernandez_Practicas.pdf" target="_blank" rel="noopener noreferrer">
+                            <img download="/Pedro_Hernandez_Practicas.pdf" src="D:\Pedro Hernandez\Documents\P\Portafolio\img/file.PNG">
+                        </a>
+                        <a href="https://businessadvocacy.com.mx/" target="_blank" rel="noopener noreferrer">
+                            <img src="D:\Pedro Hernandez\Documents\P\Portafolio\img/world.PNG">
+                        </a>
+                    </div>
+                    <div class="project-details-content">
+                        <a download href="./documents/Investigacion_Prácticas_BA_Pedro_Hdz.pdf" target="_blank" rel="noopener noreferrer">
+                            <button class="btn-project-details" download="/Investigacion_Prácticas_BA_Pedro_Hdz.PDF">Descripción del Proyecto</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Segunda rama de proyectos-->
+        <div class="container">
+            <div class="card">
+                <div class="card__img_C"><!-- Modelo BEM -->
+                    <div class="card__img_C"></div>
+                    <div class="card__title">
+                        <h2>LinkThree Indie Lab</h2>
+                        <p>Desarrollé un LinkThree para la empresa "Indie Lab" en donde
+                            están alojadas todas sus redes sociales.
+                        </p>
+                    </div>
+                    <div class="card__projectlinks">
+                        <a href="https://github.com/IndieLabMid/LinkTreeIndieLab/tree/gh-pages" target="_blank" rel="noopener noreferrer">
+                            <img src="D:\Pedro Hernandez\Documents\P\Portafolio\img/github.PNG">
+                        </a>
+                        <a href="https://indielabmid.github.io/LinkTreeIndieLab/" target="_blank" rel="noopener noreferrer">
+                            <img src="D:\Pedro Hernandez\Documents\P\Portafolio\img/world.PNG">
+                        </a>
+                    </div>
+                    <div class="project-details-content">
+                        <a href="https://github.com/IndieLabMid/LinkTreeIndieLab/tree/gh-pages" target="_blank" rel="noopener noreferrer">
+                            <button class="btn-project-details">Descripción del Proyecto</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img_S"><!-- Modelo BEM -->
+                    <div class="card__img_S"></div>
+                    <div class="card__title">
+                        <h2>Participación en Proyecto SEGEY</h2>
+                        <p>Participé en un proyecto de la SEGEY para la autoevaluación de los 
+                            docentes, en donde elaboré un inicio de sesión y la base de datos.
+                        </p>
+                    </div>
+                    <div class="project-details-content" style="padding-top: 10px;">
+                        <a download href="./documents/Pedro_SEGEY.pdf" target="_blank" rel="noopener noreferrer">
+                            <button class="btn-project-details" download="/Pedro_SEGEY.PDF">Descripción del Proyecto</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img_O"><!-- Modelo BEM -->
+                    <div class="card__img_O"></div>
+                    <div class="card__title">
+                        <h2>Proyecto Universitario 'Servicios AWS'</h2>
+                        <p>Ejecuté un servicio de Amazon Web Services llamado EC2
+                            en el cual levanté una base de datos MySQL utilizando la tecnología 'Dockers'
+                        </p>
+                    </div>
+                    <div class="project-details-content" style="padding-top: 10px;">
+                        <a download href="./documents/Pedro_Hernandez_AWS.pdf" target="_blank" rel="noopener noreferrer">
+                            <button class="btn-project-details" download="/Pedro_Hernandez_AWS.PDF">Descripción del Proyecto</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <!-- Services -->
+    <div class="services-section" id="Services">
+        <div class="services-headings">
+            <h2>Servicios</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="services-container">
+            <div class="box">
+                <div class="box__title">
+                    <h2>Desarrollo de Aplicaciones de Escritorio</h2>
+                    <img src="../Portafolio/img/computer.png" alt="Servicios Pedro Hernández Desarrollo de aplicaciones de escritorio" width="80px" height="80px">
+                </div>
+            </div>
+            <div class="box">
+                <div class="box__title">
+                    <h2>Desarrollo de Sitios Webs / Páginas Web</h2>
+                    <img src="../Portafolio/img/system.png" alt="Servcios Pedro Hernández Desarrollo Web" width="80px" height="80px">
+                </div>
+            </div>
+            <div class="box">
+                <div class="box__title">
+                    <h2>Creación / Mantenimiento a Bases de Datos</h2>
+                    <img src="../Portafolio/img/database.png" alt="Servicios Pedro Hernández Base de datos" width="80px" height="80px">
+                </div>
+            </div>
+            <div class="box">
+                <div class="box__title">
+                    <h2>Mantenimiento / Armado de Equipos de Computo</h2>
+                    <img src="../Portafolio/img/settings.png" alt="Servicios Pedro Hernández Armado y mantenimiento equipos de computo" width="80px" height="80px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto -->
+    <div class="contact-section" id="Contact">
+        <div class="contact-headings">
+            <h2>Mantengase en Contacto</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container-contact">
+            <img clas="contact-img" src="D:\Pedro Hernandez\Documents\P\Portafolio\img/user.PNG" alt="Pedro David Hernandez Dzul picture">
+            <div class="contact-form">
+                <h4>Envíame un Mensaje...</h4>
+
+                <form class="form" action="https://formsubmit.co/hernandezdzulpedro2@gmail.com" method="POST" autocomplete="off">
+                    <input type="text" placeholder="Nombre" name="Nombre">
+                    <input type="email" placeholder="E-mail" name="E-mail">
+                    <textarea placeholder="Escribe tu mensaje aquí..." name="Asunto"></textarea>
+                    
+                    <button type="submit" class="btn-submit">Envíar Mensaje</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Pedro Hernández Dzul</h2>
+            <h5>Ing. Desarrollador de Tecnologías y Software</h5>
+        </div>
+        <div class="sotial-network">
+            <a href="https://www.linkedin.com/in/pedro-david-hernandez-dzul/" target="_blank" rel="noopener noreferrer">
+                <img src="D:\Pedro Hernandez\Documents\P\Portafolio/img/linkedin.PNG" alt="Pedro Hernández Dzul linkedin">
+            </a> 
+            <a href="https://instagram.com/code.to.learn?r=nametag" target="_blank" rel="noopener noreferrer">
+                <img src="D:\Pedro Hernandez\Documents\P\Portafolio/img/ig.PNG" alt="Pedro Hernández Dzul Instagram"> 
+            </a>
+            <a href="mailto:hernandezdzulpedro2@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img src="D:\Pedro Hernandez\Documents\P\Portafolio/img/gmail.PNG" alt="Pedro Hernández Dzul Gmail"> 
+            </a>
+            <a href="https://twitter.com/PedroHe97165171" target="_blank" rel="noopener noreferrer">
+                <img src="D:\Pedro Hernandez\Documents\P\Portafolio/img/twitter.PNG" alt="Pedro Hernández Dzul Twitter"> 
+            </a>
+            <a href="https://github.com/PedroHernandez654" target="_blank" rel="noopener noreferrer">
+                <img src="D:\Pedro Hernandez\Documents\P\Portafolio/img/git.PNG" alt="Pedro Hernández Dzul Twitter"> 
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
