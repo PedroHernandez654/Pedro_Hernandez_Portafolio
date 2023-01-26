@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNews</title>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font Oswald-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <!--Barra de navegación-->
+    <div class="container">
+        <nav class="nav-main">
+            <img src="data:image/png;base64,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" alt="TechNewsLogo" class="nav-brand">
+            <ul class="nav-menu">
+                <!--Objetos dentro del menú-->
+                <li>
+                    <a href="#">Web Development</a>
+                </li>
+                <li>
+                    <a href="#">Block Chain</a>
+                </li>
+                <li>
+                    <a href="#">Artificial Intelligence</a>
+                </li>
+                <li>
+                    <a href="#">Machine Learning</a>
+                </li>
+                <li>
+                    <a href="#">Cloud Computing</a>
+                </li>
+                <li>
+                    <a href="#">Start Up</a>
+                </li>
+                <li>
+                    <a href="#">More</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <!--Main-->
+        <header class="showcase">
+            <h2>ChatGPT consigue aprobar el examen de un profesor universitario de Wharton</h2>
+            <p>Esta Inteligencia Artificial ha revolucionado Internet en los últimos meses. No solo ofrece respuestas a cualquier pregunta; ahora, una investigación demuestra que ha logrado pasar un examen universitario.</p>
+            <a href="#" class="btn">Leer Más <i class="fas fa-angle-double-right"></i></a>
+        </header>
+        <!--News Cards-->
+        <div class="news-cards">
+            <div class="cards">
+                <img src="https://www.ctvnews.ca/polopoly_fs/1.6237305.1674141758!/httpImage/image.png_gen/derivatives/landscape_800/image.png" alt="Robots">
+                <h3>ABB presenta su nueva gama de robots colaborativos</h3>
+                <p>Los nuevos cobots GoFa y SWIFTI, que cuestan entre $25,000 y $35,000 dólares cada uno, están equipados con sensores para evitar accidentes</p>
+                <a href="">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="cards">
+                <img src="https://grupoinmotion.com/wp-content/uploads/2020/12/inteligencia-artificial-770x400.jpg" alt="IA">
+                <h3>Inversión millonaria de parte de Microsoft.</h3>
+                <p>El gigante de la tecnología anunció que hará una inversión multimillonaria en OpenAI, la compañía creadora del chatbot de inteligencia artificial ChatGPT.</p>
+                <a href="">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="cards">
+                <img src="https://diarioautomotor.com.ar/wp-content/uploads/2023/01/Chevrolet-Corvette-E-Ray-Coupe-1-1.jpg" alt="Corvette">
+                <h3>Conoce el primer Corvette eléctrico.</h3>
+                <p>General Motors le da a su legendario auto deportivo una actualización híbrida. El E-Ray 2024 es el primer Corvette electrificado y con tracción total.</p>
+                <a href="">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="cards">
+                <img src="https://thenational-the-national-prod.cdn.arcpublishing.com/resizer/pDtZ5tG52bbT7ODGzoQ9XtPiXeY=/600x400/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/thenational/YR2BPWLQVIJLU7JWIH6KNI4AMA.jpg" alt="CES 2023">
+                <h3>CES 2023 lleva a Las Vegas la tecnología del año.</h3>
+                <p>Patines eléctricos, perros de juguete controlados por voz y curiosos dispositivos forman parte del CES, la feria tecnológica que comienza en Las Vegas.</p>
+                <a href="">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+        <!--Banner-->
+        <section class="cards-banner-one">
+            <div class="content">
+                <!--<h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cupiditate necessitatibus modi natus officiis ipsam possimus laudantium rerum mollitia expedita?</p>
+                <a href="#" class="btn">Learn More <i class="fas fa-angle-double-right"></i></a>-->
+            </div>
+        </section>
+        <!--News Cards 2-->
+        <div class="news-cards">
+            <div class="cards">
+                <img src="https://www.criptonoticias.com/wp-content/uploads/2023/01/walle-jade-codigo-qr-1140x570.jpg" alt="Cartera Digital">
+                <h3>Wallet Jade 0.1.42 añade multifirmas con QR para Bitcoin.</h3>
+                <p>La nueva versión de la wallet permite firmar transacciones multifirma con el dispositivo, además de añadir soporte para Nunchuk.</p>
+                <a href="">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="cards">
+                <img src="https://www.eleconomista.com.mx/__export/1507906581273/sites/eleconomista/img/historico/2016-10-27t211909z_1677768081_s1aeujljmjaa_rtrmadp_3_amazon-com-results.jpg_1014274486.jpg" alt="Amazon">
+                <h3>Amazon arriba a Chile con oficina de AWS.</h3>
+                <p>Amazon señaló que la nueva oficina proveerá una base local con gerentes de cuenta, arquitectos de soluciones, gerentes de socios, staff de apoyo y varias otras funciones.</p>
+                <a href="">Leer más  <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="cards">
+                <img src="https://i.blogs.es/f33956/airjet-ap/450_1000.jpeg" alt="Refrigeración SSD">
+                <h3>Lo que nos promete la refrigeración activa de estado sólido.</h3>
+                <p>AirJet: un chip diseñado para refrigerar otros chips con más eficacia y menos ruido.</p>
+                <a href="">Leer más  <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="cards">
+                <img src="https://i.blogs.es/18a7dd/google-grande/200_200.jpeg" alt="Google">
+                <h3>EEUU demanda (otra vez) a Google por monopolio.</h3>
+                <p>El Departamento de Justicia de Estados Unidos está listo para enfrentarse una vez más a Google en esta ocasión por su negocio de publicidad digital.</p>
+                <a href="">Leer más  <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+        <!--Banner 2-->
+        <section class="cards-banner-two">
+            <div class="content">
+                <h2>Ingresa a los nuevos cursos de TechNews</h2>
+                <p>Aquí encontrarás los mejores cursos para ser un Desarrollador Web FullStack.</p>
+                <a href="#" class="btn">Leer Más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </section>
+        <!--Social Media-->
+        <section class="social">
+            <p>Síguenos en nuestras redes sociales</p>
+            <div class="links">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+    <!--Footer-->
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="#">
+                    <h3>Title One</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Web Development</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">Artificial Intelligence</a>
+                </li>
+                <li>
+                    <a href="#">Machine Learning</a>
+                </li>
+                <li>
+                    <a href="#">Cloud Computing</a>
+                </li>
+                <li>
+                    <a href="#">Start Up</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                    <h3>Title Two</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Web Development</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">Artificial Intelligence</a>
+                </li>
+                <li>
+                    <a href="#">Machine Learning</a>
+                </li>
+                <li>
+                    <a href="#">Cloud Computing</a>
+                </li>
+                <li>
+                    <a href="#">Start Up</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                    <h3>Title Three</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Web Development</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">Artificial Intelligence</a>
+                </li>
+                <li>
+                    <a href="#">Machine Learning</a>
+                </li>
+                <li>
+                    <a href="#">Cloud Computing</a>
+                </li>
+                <li>
+                    <a href="#">Start Up</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                    <h3>Title Four</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Web Development</a>
+                </li>
+                <li>
+                    <a href="#">BlockChain</a>
+                </li>
+                <li>
+                    <a href="#">Artificial Intelligence</a>
+                </li>
+                <li>
+                    <a href="#">Machine Learning</a>
+                </li>
+                <li>
+                    <a href="#">Cloud Computing</a>
+                </li>
+                <li>
+                    <a href="#">Start Up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <h3>TechNews Copyright ©</h3>
+    </footer>
+    <!--SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--My JS-->
+    <script src="main.js"></script>
+</body>
+</html>
